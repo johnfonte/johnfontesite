@@ -1,0 +1,31 @@
+!!!
+html(lang='en')
+	head
+		title= title+" | John Fonte"
+		link(href='css/bootstrap.min.css',rel='stylesheet')
+		script(type='text/javascript',src='js/jquery.min.js')
+		script(type='text/javascript',src='js/bootstrap.min.js')
+		script.
+			$(document).ready(function(){
+				$('*:contains("#{title}")').parent().addClass('active');
+			});
+	body
+		header(class='navbar navbar-inverse navbar-fixed-top',role='banner')
+			div(class='container')
+				div(class='navbar-header')
+				nav(class='collapse navbar-collapse')
+					ul(class='nav navbar-nav')
+						li
+							a(href='/') Home
+						li
+							a(href='/programming') Programming
+						li
+							a(href='/technology') Technology
+						li
+							a(href='/gaming') Gaming
+						li
+							a(href='/ultimate') Ultimate
+		div(class='container',style='margin-top:50px')
+			h1.
+				#{title}
+			block content
