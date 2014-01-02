@@ -1,29 +1,31 @@
 !!!
 html(lang='en')
 	head
-		title= title+" | John Fonte"
+		title= title+' | John Fonte'
 		link(href='css/bootstrap.min.css',rel='stylesheet')
 		script(type='text/javascript',src='js/jquery.min.js')
 		script(type='text/javascript',src='js/bootstrap.min.js')
-		script.
-			$(document).ready(function(){
-				$('*:contains("#{title}")').parent().addClass('active');
-			});
 	body
-		header(class='navbar navbar-inverse navbar-fixed-top',role='banner')
+		nav(class='navbar navbar-inverse navbar-fixed-top',role='navigation')
 			div(class='container')
 				div(class='navbar-header')
-				nav(class='collapse navbar-collapse')
+					button(type='button', class='navbar-toggle', data-toggle='collapse', data-target='#collapsible')
+						span(class='sr-only') Toggle navigation
+						span(class='icon-bar')
+						span(class='icon-bar')
+						span(class='icon-bar')
+					a(class='navbar-brand', href='/') John Fonte
+				div(class='collapse navbar-collapse', id='collapsible')
 					ul(class='nav navbar-nav')
-						li
+						li(class=title=='Home'?'active':undefined)
 							a(href='/') Home
-						li
+						li(class=title=='Programming'?'active':undefined)
 							a(href='/programming') Programming
-						li
+						li(class=title=='Technology'?'active':undefined)
 							a(href='/technology') Technology
-						li
+						li(class=title=='Gaming'?'active':undefined)
 							a(href='/gaming') Gaming
-						li
+						li(class=title=='Ultimate'?'active':undefined)
 							a(href='/ultimate') Ultimate
 		div(class='container',style='margin-top:50px')
 			h1.
