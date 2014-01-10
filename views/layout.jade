@@ -2,32 +2,44 @@
 html(lang='en')
 	head
 		title= title+' | John Fonte'
+		meta(name='viewport', content='width=device-width, initial-scale=1')
 		link(href='css/bootstrap.min.css',rel='stylesheet')
+		link(href='css/custom.css',rel='stylesheet')
+	body
+		div(id='wrap')
+			div(class='navbar navbar-inverse navbar-fixed-top',role='navigation')
+				div(class='container')
+					div(class='navbar-header')
+						button(type='button', class='navbar-toggle', data-toggle='collapse', data-target='#collapsible')
+							span(class='sr-only') Toggle navigation
+							span(class='icon-bar')
+							span(class='icon-bar')
+							span(class='icon-bar')
+						a(class='navbar-brand', href='#') John Fonte
+					div(class='collapse navbar-collapse', id='collapsible')
+						ul(class='nav navbar-nav')
+							li(class=title=='Home'?'active':undefined)
+								a(href='/') Home
+							li(class=title=='Programming'?'active':undefined)
+								a(href='/programming') Programming
+							li(class=title=='Technology'?'active':undefined)
+								a(href='/technology') Technology
+							li(class=title=='Gaming'?'active':undefined)
+								a(href='/gaming') Gaming
+							li(class=title=='Ultimate'?'active':undefined)
+								a(href='/ultimate') Ultimate
+			div(class='container')
+				h1.
+					#{title}
+				block content
+		div(id='footer')
+			div(class='container')
+				p(class='text-muted credit')
+					| Built using 
+					a(href='#') Twitter Bootstrap, 
+					a(href='#') Jade, 
+					a(href='#') Node.js, 
+					a(href='#') Express.js
 		script(type='text/javascript',src='js/jquery.min.js')
 		script(type='text/javascript',src='js/bootstrap.min.js')
-	body
-		nav(class='navbar navbar-inverse navbar-fixed-top',role='navigation')
-			div(class='container')
-				div(class='navbar-header')
-					button(type='button', class='navbar-toggle', data-toggle='collapse', data-target='#collapsible')
-						span(class='sr-only') Toggle navigation
-						span(class='icon-bar')
-						span(class='icon-bar')
-						span(class='icon-bar')
-					a(class='navbar-brand', href='/') John Fonte
-				div(class='collapse navbar-collapse', id='collapsible')
-					ul(class='nav navbar-nav')
-						li(class=title=='Home'?'active':undefined)
-							a(href='/') Home
-						li(class=title=='Programming'?'active':undefined)
-							a(href='/programming') Programming
-						li(class=title=='Technology'?'active':undefined)
-							a(href='/technology') Technology
-						li(class=title=='Gaming'?'active':undefined)
-							a(href='/gaming') Gaming
-						li(class=title=='Ultimate'?'active':undefined)
-							a(href='/ultimate') Ultimate
-		div(class='container',style='margin-top:50px')
-			h1.
-				#{title}
-			block content
+

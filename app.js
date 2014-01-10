@@ -22,11 +22,19 @@ var navigation = [
   { url: "/*", uri: "404", title: "404" }
 ];
 
+var templates = [];
+
+var getTemplate = function (filename) {
+  var template = fs.readFileSync(__dirname + '/views/' + filename + '.jade', 'utf8');
+  return jade.compile(template, {filename: __dirname + '/views/' + filename + '.jade', pretty: true});
+};
+
+for(var i=0; i<6; i++) {
+  templates[i] = getTemplate(navigation[i].uri);
+}
+
 var render = function(req, res, index) {
-  res.render(
-    navigation[index].uri,
-    {title: navigation[index].title}
-  );
+  res.send(templates[index]({title: navigation[index].title}));
 };
 
 app.get(navigation[0].url, function(req, res){ render(req, res, 0); });
