@@ -11,14 +11,12 @@ app.configure(function(){
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(express.static(path.join(__dirname, 'public')));
+  app.use(express.favicon( __dirname + '/favicon.ico'));
 });
 
 var navigation = [
-  { url: "/", uri: "home", title: "Home" },
-  { url: "/programming", uri: "programming", title: "Programming" },
-  { url: "/technology", uri: "technology", title: "Technology" },
-  { url: "/gaming", uri: "gaming", title: "Gaming" },
-  { url: "/ultimate", uri: "ultimate", title: "Ultimate" },
+  { url: "/", uri: "professional", title: "Professional" },
+  { url: "/hobbies", uri: "hobbies", title: "Hobbies" },
   { url: "/*", uri: "404", title: "404" }
 ];
 
@@ -29,7 +27,7 @@ var getTemplate = function (filename) {
   return jade.compile(template, {filename: __dirname + '/views/' + filename + '.jade', pretty: true});
 };
 
-for(var i=0; i<6; i++) {
+for(var i=0; i<navigation.length; i++) {
   templates[i] = getTemplate(navigation[i].uri);
 }
 
@@ -43,10 +41,10 @@ app.get(navigation[1].url, function(req, res){ render(req, res, 1); });
 
 app.get(navigation[2].url, function(req, res){ render(req, res, 2); });
 
-app.get(navigation[3].url, function(req, res){ render(req, res, 3); });
+// app.get(navigation[3].url, function(req, res){ render(req, res, 3); });
 
-app.get(navigation[4].url, function(req, res){ render(req, res, 4); });
+// app.get(navigation[4].url, function(req, res){ render(req, res, 4); });
 
-app.get(navigation[5].url, function(req, res){ render(req, res, 5); });
+// app.get(navigation[5].url, function(req, res){ render(req, res, 5); });
 
 app.listen(3000);

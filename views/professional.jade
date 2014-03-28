@@ -1,0 +1,158 @@
+extends layout
+block append navbar
+	li
+		a(data-scroll href='#about') About
+	li
+		a(data-scroll href='#experience') Experience
+	li
+		a(data-scroll href='#projects') Projects
+	li
+		a(data-scroll href='#skills') Skills
+	li
+		a(data-scroll href='#contact') Contact
+block append scripts
+	script(type='text/javascript',src='js/adn.js')
+block append content
+	div(id='header', class='cwrap')
+		div(class='container centered')
+			h1.
+				John Fonte
+	div(id='about', class='cwrap')
+		div(class='container')
+			div(class='row')
+				div(class='col-lg-12')
+					h3.
+						ABOUT
+			div(class='row')
+				div(class='col-lg-2')
+					p.
+						RESUME
+				div(class='col-lg-7')
+					p.
+						I am a Software Engineer with full-stack and multi-platform experience living in Ann Arbor, Michigan. I graduated December 2014 from the University of Michigan with a degree in Computer Engineering.
+				div(class='col-lg-3')
+	div(id='experience', class='cwrap')
+		div(class='container')
+			div(class='row')
+				div(class='col-lg-12')
+					h3.
+						EXPERIENCE
+			div(class='row')
+				div(class='col-lg-2')
+					a(href='http://learninga-z.com', target='_blank', class='thumbnail')
+						img(src='img/laz.png', class='img-responsive', style='padding: 4px;')
+				div(class='col-lg-7')
+					strong
+						| Learning A-Z [CURRENT]
+					br
+					p
+						| Some of my previous projects include the Raz-Kids iOS app, creating the 
+						a(href='http://raz-kids.com/parents') Parent Portal
+						| , and our custom sales and customer service tools.
+				div(class='col-lg-3')
+					p
+						| Software Engineer 2014-Present
+						br
+						| Intern 2010-2013
+			div(class='row')
+				div(class='col-lg-2')
+					a(href='http://caen.engin.umich.edu', target='_blank', class='thumbnail')
+						img(src='img/caen.png', class='img-responsive', style='background: #0F2955; padding: 4px;')
+				div(class='col-lg-7')
+					strong
+						| CAEN Instructional Technology
+					br
+					p
+						| Led a project to create a new classroom monitoring service, using Node.js server technology and live server-client socket connections.
+				div(class='col-lg-3')
+					p
+						| Student Software Engineer 2012-2013
+	div(class='container')
+		hr
+	div(id='projects', class='cwrap')
+		div(class='container')
+			div(class='row')
+				div(class='col-lg-12')
+					h3.
+						PROJECTS
+			div(class='row')
+				div(class='col-lg-2')
+					a(href='http://stredm.com', target='_blank')
+						img(src='img/stredm.png', class='img-rounded project-image')
+				div(class='col-lg-7')
+					strong.
+						Stredm [CURRENT]
+					br
+					p
+						| A music-streaming service for EDM listeners. Our product is available on the Web, as an android app, and very soon as an iOS app.
+				div(class='col-lg-3')
+			div(class='row')
+				div(class='col-lg-2')
+					a(href='http://golfbmpsolutions.com', target='_blank')
+						img(src='img/golfbmp.png', class='img-rounded project-image')
+				div(class='col-lg-7')
+					strong.
+						Golf BMP Solutions [CURRENT]
+					br
+					p
+						| An informational site for Golf BMP Solutions, a business based in Florida which aids golf courses in following federal regulations.
+				div(class='col-lg-3')
+			div(class='row')
+				div(class='col-lg-2')
+					p(class='betterauthtext')
+						| BetterAuth
+				div(class='col-lg-7')
+					strong.
+						PennApps Spring 2013: BetterAuth
+					br
+					p
+						| Better Two-Factor Authentication. Streamlined the flow for common users.
+				div(class='col-lg-3')
+	div(id='skills', class='cwrap')
+		div(class='container')
+			div(class='row')
+				div(class='col-lg-2')
+					h3.
+						SKILLS
+				div(class='col-lg-1')
+					img(id='jquerylogo', src='img/jquery.gif', class='img-rounded project-image')
+				div(class='col-lg-2')
+					canvas(id='jquery', width='120', height='120')
+				div(class='col-lg-1')
+					img(id='phplogo', src='img/php.png', class='img-responsive project-image')
+				div(class='col-lg-2')
+					canvas(id='php', width='120', height='120')
+				div(class='col-lg-1')
+					img(src='img/java.jpg', class='img-rounded project-image')
+				div(class='col-lg-2')
+					canvas(id='java', width='120', height='120')
+				div(class='col-lg-1')
+			div(class='row')
+				div(class='col-lg-1 col-lg-offset-2')
+					img(src='img/android.png', class='img-responsive project-image')
+				div(class='col-lg-2')
+					canvas(id='android', width='120', height='120')
+				div(class='col-lg-1')
+					img(src='img/ios.jpg', class='img-rounded project-image')
+				div(class='col-lg-2')
+					canvas(id='ios', width='120', height='120')
+				div(class='col-lg-1')
+	div(id='contact', class='cwrap')
+		div(class='container')
+			div(class='row')
+				div(class='col-lg-12')
+					h3.
+						CONTACT
+			div(class='row')
+				div(class='col-xs-3',id='email')
+					a(href='mailto:john@fonte.com', target='_blank', target='_blank' title='john@fonte.com')
+						img(class='img-rounded', src='img/gmail.png', style='height: 64px;')
+				div(class='col-xs-3')
+					a(href='https://twitter.com/johnpfonte', target='_blank', target='_blank' title='@johnpfonte')
+						img(class='img-rounded', src='img/twitter.png', style='height: 64px;')
+				div(class='col-xs-3')
+					a(href='https://github.com/johnfonte', target='_blank', target='_blank' title='@johnfonte')
+						img(class='img-rounded', src='img/github.png', style='height: 64px;')
+				div(class='col-xs-3')
+					a(href='https://alpha.app.net/johnfonte', target='_blank', target='_blank' title='@johnfonte')
+						img(class='img-rounded', src='img/adn.png', style='height: 64px;')
