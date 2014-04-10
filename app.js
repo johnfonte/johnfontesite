@@ -15,8 +15,8 @@ app.configure(function(){
 });
 
 var navigation = [
-  { url: "/", uri: "professional", title: "Professional" },
-  { url: "/hobbies", uri: "hobbies", title: "Hobbies" },
+  { url: "/", uri: "professional", title: "John Fonte" },
+  { url: "/hobbies", uri: "hobbies", title: "John Fonte | Hobbies" },
   { url: "/*", uri: "404", title: "404" }
 ];
 
@@ -40,11 +40,5 @@ app.get(navigation[0].url, function(req, res){ render(req, res, 0); });
 app.get(navigation[1].url, function(req, res){ render(req, res, 1); });
 
 app.get(navigation[2].url, function(req, res){ render(req, res, 2); });
-
-// app.get(navigation[3].url, function(req, res){ render(req, res, 3); });
-
-// app.get(navigation[4].url, function(req, res){ render(req, res, 4); });
-
-// app.get(navigation[5].url, function(req, res){ render(req, res, 5); });
 
 app.listen(3000);

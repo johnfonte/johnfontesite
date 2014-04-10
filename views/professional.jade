@@ -10,8 +10,6 @@ block append navbar
 		a(data-scroll href='#skills') Skills
 	li
 		a(data-scroll href='#contact') Contact
-block append scripts
-	script(type='text/javascript',src='js/adn.js')
 block append content
 	div(id='header', class='cwrap')
 		div(class='container centered')
@@ -25,8 +23,8 @@ block append content
 						ABOUT
 			div(class='row')
 				div(class='col-lg-2')
-					p.
-						RESUME
+					p
+						a(id='resumeLink', href='resume.pdf', target='_blank') RESUME
 				div(class='col-lg-7')
 					p.
 						I am a Software Engineer with full-stack and multi-platform experience living in Ann Arbor, Michigan. I graduated December 2014 from the University of Michigan with a degree in Computer Engineering.
@@ -53,7 +51,7 @@ block append content
 					p
 						| Software Engineer 2014-Present
 						br
-						| Intern 2010-2013
+						| Software Engineering Intern 2010-2013
 			div(class='row')
 				div(class='col-lg-2')
 					a(href='http://caen.engin.umich.edu', target='_blank', class='thumbnail')

@@ -98,6 +98,14 @@ p{
 .centered{
   text-align:center
 }
+a#resumeLink {
+  color:#F1C40F;
+}
+
+a#resumeLink:hover, a#resumeLink:focus {
+  color:#2C3E50;
+}
+
 a{
   /*color:#f85c37;*/
 word-wrap:break-word;
