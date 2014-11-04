@@ -1,0 +1,81 @@
+
+{
+    "name": "John Fonte",
+    "email": "john@fonte.com",
+    "bio": {
+        "firstName": "John",
+        "lastName": "Fonte",
+        "gender": "male",
+        "email": "john@fonte.com",
+        "phone": "7349723343",
+        "summary": "Changing the world, one line of code at a time.",
+        "location": {
+            "city": "Ann Arbor",
+            "state": "Michigan",
+            "country": "USA"
+        },
+        "websites": {
+            "personal": "http://johnfonte.com",
+            "facebook": "https://www.facebook.com/john.fonte",
+            "twitter": "johnpfonte",
+            "github": "johnfonte",
+            "linkedin": "http://www.linkedin.com/in/johnfonte"
+        },
+        "resume": "http://johnfonte.com/resume.pdf"
+    },
+    "education": [
+        {
+            "institution": "University of Michigan",
+            "areas": [
+                "Computer Engineering"
+            ],
+            "studyType": "Bachelor of Science in Engineering",
+            "start": "2010",
+            "end": "2014"
+        }
+    ],
+    "work": [
+        {
+            "company": "Learning A-Z",
+            "position": "Software Engineer",
+            "start": "Jan 2014",
+            "end": "",
+            "description": ""
+        }
+    ],
+    "hackathons": [
+        {
+            "name": "",
+            "season": "Spring",
+            "year": "2013",
+            "awards": [
+                "Most"
+            ],
+            "project": {
+                "name": "",
+                "link": "",
+                "image": "",
+                "repository": "",
+                "description": "",
+                "technologies": [
+                    "Javascript",
+                    "Node.js",
+                    "Socket.IO"
+                ]
+            }
+        }
+    ],
+    "projects": [
+        {
+            "name": "",
+            "description": "",
+            "link": "http://",
+            "image": ""
+        }
+    ],
+    "skills": [
+        "Javascript",
+        "HTML",
+        "CSS"
+    ]
+}

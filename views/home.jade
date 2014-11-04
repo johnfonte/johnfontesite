@@ -1,0 +1,85 @@
+extends layout
+block append content
+	div(id='title', class='centered title')
+		a(id='name', href='#')
+			h1.
+				John Fonte
+	div(id='content', class='centered')
+		h3(id='description').
+			I am a Software Engineer and a creator.
+		div(id='contact')
+			a(href='#mailto:john[AT]fonte[DOT]com', title='john[AT]fonte[DOT]com' class='interact')
+				div(class='column link', id='email')
+					i(class='fa fa-envelope fa-2x')
+			a(href='https://twitter.com/johnpfonte', target='_blank', title='@johnpfonte' class='interact')
+				div(class='column link', id='twitter')
+					i(class='fa fa-twitter fa-2x')
+			a(href='https://facebook.com/johnpfonte', target='_blank', title='fb/johnpfonte' class='interact')
+				div(class='column link', id='facebook')
+					i(class='fa fa-facebook fa-2x')
+			a(href='https://linkedin.com/pub/johnfonte', target='_blank', title='linkedin/johnfonte' class='interact')
+				div(class='column link', id='linkedin')
+					i(class='fa fa-linkedin fa-2x')
+			a(href='https://github.com/johnfonte', target='_blank', title='github/johnfonte' class='interact')
+				div(class='column link', id='github')
+					i(class='fa fa-github fa-2x')
+			a(href='http://johnfonte.com/resume.pdf', target='_blank', title='Resume' class='interact')
+				div(class='column link', id='resume')
+					i(class='fa fa-file-pdf-o fa-2x')
+		hr
+		div(id='projects-info-1')
+			div(id='setmine-project', class='project')
+				a(id='setmine', href='http://setmine.com', target='_blank', class='link')
+					div(class='image', style='background-image: url(./img/setmine.png);')
+					h3(class='setmine section').
+						SetMine
+				div(class='text')
+					p
+						| SetMine is a streaming service for musical sets played at festivals.
+			div(id='betterauth-project', class='project')
+				a(id='betterauth', href='https://www.hackerleague.org/hackathons/pennapps-spring-2013/hacks/betterauth', target='_blank', class='link')
+					h3(class='betterauth section').
+						BetterAuth
+					div(class='external')
+						i(class='fa fa-external-link fa-2x external')
+				div(class='text')
+					p
+						| A hack created for PennApps Spring 2013. Saves time for anyone using Two-Factor Authentication.
+		div(id='projects-info-2')
+			div(id='golfbmp-project', class='project')
+				a(id='golfbmp', href='http://www.golfbmpsolutions.com', target='_blank', class='link')
+					div(class='image', style='background-image: url(./img/golfbmp.png);')
+					h3(class='golfbmp section').
+						Golf BMP Solutions
+				div(class='text')
+					p
+						| An informational site for Golf BMP Solutions, a business based in Florida which aids golf courses in following federal regulations.
+			div(id='virulent-project', class='project')
+				a(id='virulent', href='https://github.com/johnfonte/virulent', target='_blank', class='link')
+					h3(class='section')
+						| Virulent Keyboard
+					div(class='external')
+						i(class='fa fa-code fa-2x external')
+				div(class='text')
+					p
+						| A personal project to create a custom keyboard, PCB and firmware.
+		hr
+		div(id='life-info')
+			div(id='home-project', class='project')
+				h3(class='section').
+					Home
+				div(class='image uofm', style='background-image: url(./img/uofm.png);')
+				div(class='image', style='background-image: url(./img/a2.jpg);')
+				div(class='text')
+					p
+						| I grew up in Ann Arbor, MI with my parents and four younger siblings. I'm a Wolverine.
+			div(id='sports-project', class='project')
+				h3(class='section').
+					Sports
+				div(class='image', style='background-image: url(./img/me.jpeg);')
+				div(class='image spoiler', style='background-image: url(./img/spoiler.png);')
+				div(class='image magnum', style='background-image: url(./img/magnum3.png);')
+				div(class='text')
+					p
+						| I play Ultimate Frisbee for Ann Arbor Spoiler and have played for the University of Michigan.
+		i(class='fa fa-angle-double-up fa-2x scrollup')

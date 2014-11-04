@@ -5,37 +5,12 @@ html(lang='en')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
 		meta(name='description', content='John Fonte is a Software Engineer with full-stack and multi-platform experience living in Ann Arbor, Michigan.')
-		link(href='css/bootstrap.min.css',rel='stylesheet')
-		link(href='css/custom.css',rel='stylesheet')
+		link(href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css',rel='stylesheet')
 		link(href='http://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet', type='text/css')
+		link(href='css/custom.css',rel='stylesheet')
 	body
-		div(id='wrap')
-			nav(data-scroll-header class='navbar navbar-inverse navbar-fixed-top',role='navigation')
-				div(class='container')
-					div(class='navbar-header')
-						button(type='button', class='navbar-toggle', data-toggle='collapse', data-target='#collapsible')
-							span(class='sr-only') Toggle navigation
-							span(class='icon-bar')
-							span(class='icon-bar')
-							span(class='icon-bar')
-						a(class='navbar-brand' data-scroll, href='#top') John Fonte
-					div(class='collapse navbar-collapse', id='collapsible')
-						ul(class='nav navbar-nav')
-							block navbar
-			div(id='top', style='height: 51px;')
-			block content
-		div(id='footer')
-			div(class='container')
-				p(class='text-muted credit')
-					| Built using 
-					a(href='#footer' data-scroll) Twitter Bootstrap, 
-					a(href='#footer' data-scroll) Jade, 
-					a(href='#footer' data-scroll) Node.js, 
-					a(href='#footer' data-scroll) Express.js
+		block content
 		script(type='text/javascript',src='js/jquery.min.js')
-		script(type='text/javascript',src='js/bootstrap.min.js')
-		script(type='text/javascript',src='js/chart.min.js')
-		script(type='text/javascript',src='js/smooth-scroll.js')
 		script(type='text/javascript',src='js/mixpanel.js')
 		script(type='text/javascript',src='js/custom.js')
 		block scripts

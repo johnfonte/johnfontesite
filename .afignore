@@ -4,3 +4,9 @@
 #ignore website outline
 Website layout – outline
 advice
+johnfonte.sublime-project
+johnfonte.sublime-workspace
+views/hobbies.jade
+public/img/large/*
+public/img/unused/*
+public/johnfonte.json

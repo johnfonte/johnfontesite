@@ -1,0 +1,38 @@
+{
+  "name": "johnfonte",
+  "version": "0.0.0",
+  "description": "John Fonte's Website",
+  "main": "app.js",
+  "dependencies": {
+    "connect": "~2.11.2",
+    "ejs-locals": "~1.0.2",
+    "ejs": "~0.8.5",
+    "express": "~3.4.4",
+    "fs": "~0.0.0",
+    "html": "~0.0.7",
+    "nodemon": "~1.0.17",
+    "jade": "~0.35.0",
+    "nowww": "~1.1.2",
+    "path": "~0.4.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/johnfonte/johnfontesite.git"
+  },
+  "keywords": [
+    "node",
+    "connect",
+    "bootstrap",
+    "jade"
+  ],
+  "author": "John Fonte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnfonte/johnfontesite/issues"
+  },
+  "homepage": "https://github.com/johnfonte/johnfontesite"
+}
