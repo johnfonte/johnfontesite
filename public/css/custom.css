@@ -175,25 +175,37 @@ hr {
 div.image { /* individual images overwrite width and bg size */
   height: 56px;
   width: 56px;
-  background-size: 56px 56px;
   background-position: .5em;
-  padding: 0 .5em;
+  margin: 0 .5em;
   float: left;
   background-repeat: no-repeat;
+  background-image: url('../img/sprite.png');
 }
-#golfbmp div.image, div.image.uofm {
-  width: 53px;
-  background-size: 53px 56px;
+#setmine div.image {
+  background-position: 0 0;
+}
+#golfbmp div.image {
+  width: 54px;
+  background-position: 0px -56px;
+}
+div.image.uofm {
+  width: 54px;
+  background-position: 0px -112px;
+}
+div.image.a2 {
+  background-position: 0px -168px;
+}
+div.image.ulti {
+  background-position: 0px -224px;
+}
+div.image.spoiler {
+  width: 84px;
+  background-position: 0px -280px;
 }
 div.image.magnum {
   width: 63px;
-  background-size: 63px 56px;
+  background-position: 0px -336px;
 }
-div.image.spoiler {
-  width: 83px;
-  background-size: 83px 56px;
-}
-
 p {
   line-height:28px;
   margin-bottom:25px;
@@ -214,23 +226,36 @@ p {
   div.image { /* individual images overwrite width and bg size */
     height: 40px;
     width: 40px;
-    background-size: 40px 40px;
     background-position: .5em;
-    padding: 0 .5em;
+    margin: 0 .5em;
     float: left;
     background-repeat: no-repeat;
+    background-image: url('../img/sprite-sm.png');
   }
-  #golfbmp div.image, div.image.uofm {
+  #setmine div.image {
+    background-position: 0 0;
+  }
+  #golfbmp div.image {
     width: 38px;
-    background-size: 38px 40px;
+    background-position: 0px -40px;
   }
-  div.image.magnum {
-    width: 45px;
-    background-size: 45px 40px;
+  div.image.uofm {
+    width: 38px;
+    background-position: 0px -80px;
+  }
+  div.image.a2 {
+    background-position: 0px -120px;
+  }
+  div.image.ulti {
+    background-position: 0px -160px;
   }
   div.image.spoiler {
     width: 60px;
-    background-size: 60px 40px;
+    background-position: 0px -200px;
+  }
+  div.image.magnum {
+    width: 45px;
+    background-position: 0px -240px;
   }
 }
 @media (min-width: 600px) {
