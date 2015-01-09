@@ -61,6 +61,10 @@ i, h1, .setmine, .golfbmp {
   border-bottom: thick solid #d91e18;
 }
 
+.interact {
+  display: inline-block;
+}
+
 .interact:hover div i, .link:hover div i,
 .tab:hover, .tab.clicked {
   color: #d91e18;
