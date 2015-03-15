@@ -8,7 +8,7 @@
 /* outer */
 html,
 body {
-  background-color:#fff;
+  background-color:#ffffff;
   font-family: 'Open Sans', sans-serif;
   height: 100%;
   margin: 0;
@@ -31,7 +31,15 @@ a, h1, h2, h3, h4, h5, h6, p {
   font-weight: 400;
   margin: 0;
   -webkit-user-select: text;
-  color: #2980B9;
+  color: #212121;
+}
+
+h1 {
+  font-family: 'Open Sans Light', sans-serif;
+}
+
+#description {
+  color: #727272;
 }
 
 /* transitions */
@@ -58,7 +66,7 @@ i, h1, .setmine, .golfbmp {
 }
 
 .tab:hover, .tab.clicked {
-  border-bottom: thick solid #d91e18;
+  border-bottom: thick solid #ff5252;
 }
 
 .interact {
@@ -67,7 +75,7 @@ i, h1, .setmine, .golfbmp {
 
 .interact:hover div i, .link:hover div i,
 .tab:hover, .tab.clicked {
-  color: #d91e18;
+  color: #ff5252;
 }
 
 /* section headers */
@@ -149,9 +157,10 @@ i.external {
   font-size: 3em;
   letter-spacing: .05em;
   margin-top: 50px;
+  color: #1976D2;
 }
 .title h1:hover {
-  color: #d91e18;
+  color: #ff5252;
 }
 
 /* scrollup */
@@ -169,11 +178,29 @@ i.external {
 
 /* tags */
 i {
-  color: #2980B9;
+  color: #1976D2;
+}
+.fa-github {
+  color: #333;
+}
+.fa-facebook {
+  color: #3a5795;
+}
+.fa-twitter {
+  color: #55acee;
+}
+.fa-linkedin {
+  color: #1d87bd;
+}
+.fa-envelope {
+  color: #db483c;
+}
+.fa-file-pdf-o {
+  color: #e40b0b;
 }
 hr {
   display: block; height: 1px;
-  border: 0; border-top: 1px solid #2980B9;
+  border: 0; border-top: 1px solid #B6B6B6;
   margin: 1em auto; padding: 0;
 }
 div.image { /* individual images overwrite width and bg size */
@@ -214,6 +241,7 @@ p {
   line-height:28px;
   margin-bottom:25px;
   padding-right: 2em;
+  color: #727272;
 }
 
 @media (max-width: 600px) {
